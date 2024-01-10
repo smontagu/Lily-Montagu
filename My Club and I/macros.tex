@@ -1,0 +1,27 @@
+\usepackage[pdfauthor={Lily Montagu},
+  pdftitle={My Club and I},
+  pdfsubject={Judaism, autobiography},
+  pdfproducer={Simon Montagu, Hataf Segol Publishing},
+  pdfcreator=xelatex,
+  colorlinks=false, linkcolor=blue,
+  linkbordercolor={.6 .6 .6}]{hyperref}
+\makeatletter
+\Hy@AtBeginDocument{%
+  % Override border definition set with colorlinks=true
+  \def\@pdfborder{0 0 1}
+  % Overrides border style set with colorlinks=true
+  % Hyperlink border style will be underline of width 1pt
+  \def\@pdfborderstyle{/S/U/W 1}
+}
+\makeatother
+
+\newenvironment{tp}[1]{% tolerant paragraph}
+  \par\tolerance=#1\relax
+}{%
+  \par
+}
+
+\newcommand{\numberlesschapter}[1]{
+  \chapter*[#1]{#1}
+  \addcontentsline{toc}{chapter}{#1}
+}

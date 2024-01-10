@@ -1,0 +1,20 @@
+\documentclass[12pt, extrafontsizes, twopage, a5paper]{memoir}
+
+\include{formatting.tex}
+\include{macros.tex}
+
+\begin{document}
+\input{FrontMatter.tex}
+\mainmatter
+\pagestyle{myheadings}
+\makeatletter
+\nouppercaseheads
+\makeevenhead{myheadings}{\thepage}{}{My Club and I}
+\createmark{chapter}{right}{nonumber}{\@chapapp elephant}{}
+\makeatother
+
+\include{chapter1.tex}
+\chapter{The Training of the Leader} % placeholder
+\chapter{The Government of the Club} % placeholder
+\include{chapter4.tex}
+\end{document}

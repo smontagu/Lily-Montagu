@@ -1,0 +1,25 @@
+\documentclass[12pt, extrafontsizes, twopage, a5paper]{memoir}
+
+\include{formatting.tex}
+\include{macros.tex}
+
+\begin{document}
+\input{FrontMatter.tex}
+\mainmatter
+\pagestyle{myheadings}
+\nouppercaseheads
+\makeevenhead{myheadings}{\thepage}{}{Thoughts on Judaism}
+\makeoddhead{myheadings}{Lily Montagu}{}{\thepage}
+\createmark{chapter}{right}{nonumber}{}{}
+
+\include{introduction.tex}
+\include{chapter1.tex}
+\include{chapter2.tex}
+\include{chapter3.tex}
+\include{chapter4.tex}
+\include{chapter5.tex}
+\include{chapter6.tex}
+\include{chapter7.tex}
+\include{chapter8.tex}
+\include{chapter9.tex}
+\end{document}

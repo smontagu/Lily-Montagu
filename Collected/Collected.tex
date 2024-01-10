@@ -1,0 +1,23 @@
+\documentclass[12pt, extrafontsizes, twopage, a5paper]{memoir}
+
+\input{formatting.tex}
+\input{macros.tex}
+
+\begin{document}
+\include{FrontMatter.tex}
+
+\mainmatter
+\pagestyle{myheadings}
+\nouppercaseheads
+%\makeevenhead{myheadings}{\thepage}{}{\thechapter}
+\makeevenhead{myheadings}{\thepage}{}{Lily Montagu}
+\createmark{chapter}{right}{nonumber}{\@chapapp\ }{}
+
+\include{SpiritualPossibilities.tex}
+\include{kinship.tex}
+\include{OnPrayer.tex}
+\include{mistaken.tex}
+\include{WhatIsJudaism.tex}
+\include{SpiritualContribution.tex}
+\include{ReligiousResponsibility.tex}
+\end{document}
