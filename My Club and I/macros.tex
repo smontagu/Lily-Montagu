@@ -21,7 +21,8 @@
   \par
 }
 
-\newcommand{\numberlesschapter}[1]{
-  \chapter*[#1]{#1}
+\newcommand{\numberlesschapter}[2][\tocentry]{
+  \def\tocentry{#2}
+  \chapter*[#1]{#2}
   \addcontentsline{toc}{chapter}{#1}
 }
